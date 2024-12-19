@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продам Роберта Паттинсона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="btn-menu" id="menuBtn">Меню</button>
+        <div class="container">
+            <nav class="nav" id="menu">
+                <ul class="nav_list">
+                    <li class="nav_item">Вход</li>
+                    <li class="nav_item">Регистрация</li>
+                    <li class="nav_item">Акции</li>
+                    <li class="nav_item">Корзина</li>
+                    <li class="nav_item">
+                        <div class="white" onclick="white()"></div>
+                    </li>
+                    <li class="nav_item">
+                        <div class="black" onclick="black()"></div>
+                    </li>
+                </ul>
+                <button class="burger" onclick="burgerClick()">
+                    <img src="img/pngwing.com (1).png" alt="" class="bg_img">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="shop">
+            <div class="container">
+                <h1 class="shop_title">Продам Роберта Паттинсона</h1>
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="img/robert.jpg" alt="" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/robert2.jpg" alt="" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/robert3.jpg" alt="" class="shop_img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+                <div class="accordion" id="accordion-1">
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">
+                            О товаре
+                        </h2>
+                        <div class="accordion__body">
+                            <p class="shop_text">Роберта Паттинсона - это молодежная робота, которая привлекает к
+                                небольшим
+                                условиям. На
+                                самом деле, роберта Паттинсона - это молодежная робота, которая привлекает к небольшим
+                                условия
+                                Роберта Паттинсона - это молодежная робота, которая привлекает к небольшим условиям. На
+                                самом деле, роберта Паттинсона - это молодежная робота, которая привлекает к небольшим
+                                условия
+                                Роберта Паттинсона - это молодежная робота, которая привлекает к небольшим условиям. На
+                                самом деле, роберта Паттинсона - это молодежная робота, которая привлекает к небольшим
+                                условия
+                                Роберта Паттинсона - это молодежная робота, которая привлекает к небольшим условиям. На
+                                самом деле, роберта Паттинсона - это молодежная робота, которая привлекает к небольшим
+                                условия.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">
+                            Цена
+                        </h2>
+                        <div class="accordion__body">
+                            <p class="shop_prise">6 000 000$</p>
+                            <button class="shop_btn" onclick="buy()" id="btn">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ВИДЕО-->
+        <section class="video">
+            <div class="container">
+                <h3 class="video_title">Фильм Тёмная башня</h3>
+                <video class="video_video" muted controls>
+                    <source type="video/mp4" src="video/video1.mp4" class="video_src">
+                </video>
+            <!-- второй урок-->
+                <div class="video_controls">
+                    <button class="video_play" onclick="videoPlay()">Play</button>
+                    <button class="video_pause" onclick="videoPause()">Pause</button>
+                    <button class="video_prev" onclick="videoPrev()">Prev</button>
+                    <button class="video_next" onclick="videoNext()">Next</button>
+                    <button class="video_mute" onclick="videoMute()">Mute</button>
+                    <button class="unmute" onclick="videoUnmute()">Unmute</button>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <div class="container">
+                <h2 class="map_title">Точки самовывоза</h2>
+                <div class="google">
+                    <h2 class="google_map">Google карта</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20621.23324261652!2d30.99327002807951!3d52.42513240442667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469b2e52fbddd%3A0x46ca85b566d34e12!2z0KHQtdC60YDQtdGC!5e0!3m2!1sru!2sby!4v1690621308691!5m2!1sru!2sby"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="yandex">
+                    <h2 class="yandex_map">Yandex карта</h2>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab2dc70c68cdde17822ea5a75e98c7ee9ddb8831951b6b96301693e02910de2e0&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="clock">
+            <div class="container container_clock">
+                <div class="current_time" id="time">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container_footer">
+            <p class="footer_text">Левченко В.В. 9-г класс</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>
